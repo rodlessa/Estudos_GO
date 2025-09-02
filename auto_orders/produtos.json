@@ -1,0 +1,118 @@
+{
+  "marcas": [
+    "ASUS",
+    "MSI",
+    "GIGABYTE"
+  ],
+  "modelos_gpu": {
+    "AMD":[
+        "RX 9070 XT",
+        "RX 9060 XT",
+        "RX 7900 XT",
+        "RX 7800 XT",
+        "RX 7700 XT",
+        "RX 7600 XT",
+        "RX 9070",
+        "RX 9060",
+        "RX 7900",
+        "RX 7800",
+        "RX 7700",
+        "RX 7600"
+    ],
+    "NVIDIA":[
+        "RTX 5090",
+        "RTX 5080",
+        "RTX 5070",
+        "RTX 5060",
+        "RTX 5050",
+        "RTX 5090 TI",
+        "RTX 5080 TI",
+        "RTX 5070 TI",
+        "RTX 5060 TI",
+        "RTX 5050 TI",
+        "RTX 5090 SUPER",
+        "RTX 5080 SUPER",
+        "RTX 5070 SUPER",
+        "RTX 5060 SUPER",
+        "RTX 5050 SUPER"
+    ]
+    },
+     "modelos_cpu": {
+    "AMD":[
+        "AM4 5500",
+        "AM4 5600",
+        "AM4 5700",
+        "AM4 5800",
+        "AM4 5500X",
+        "AM4 5600X",
+        "AM4 5700X",
+        "AM4 5800X",
+        "AM4 5900X",
+        "AM4 5950X",
+        "AM4 5800X3D",
+        "AM4 57003D",
+        "AM5 9500",
+        "AM5 9600X",
+        "AM5 9700X",
+        "AM5 9800X",
+        "AM5 9800X3D",
+        "AM5 9900X3D",
+        "AM5 9950X3D",
+        "AM5 9950X"
+
+    ],
+    "Intel":[
+        "Core Ultra 9 285K",
+        "Core Ultra 9 285",
+        "Core Ultra 9 285T",
+        "Core Ultra 7 265K",
+        "Core Ultra 7 265K",
+        "Core Ultra 7 265KF",
+        "Core Ultra 7 265",
+        "Core Ultra 7 265T",
+        "Core Ultra 5 245K",
+        "Core Ultra 5 245KF",
+        "Core Ultra 5 245",
+        "Core Ultra 5 245T",
+        "Core Ultra 5 235K",
+        "Core Ultra 5 235",
+        "Core Ultra 5 235T",
+        "Core Ultra 5 225",
+        "Core Ultra 5 225F"
+    ]
+    },
+    "modelos_mother": [
+        "X99",
+        "B550",
+        "B650",
+        "X570",
+        "X670",
+        "X870"
+    ],
+    "tamanho_ssd":[
+        "128GB",
+        "256GB",
+        "512GB",
+        "1TB",
+        "2TB",
+        "4TB",
+        "8TB",
+        "10TB",
+        "14TB",
+        "20TB"
+    ],
+    "memoria_tipo":[
+        "DDR4",
+        "DDR5"
+        
+    ],
+    "memoria":[
+        "8 GB",
+        "16 GB",
+        "24 GB",
+        "48 GB",
+        "64 GB",
+        "128 GB"
+    ]
+
+}

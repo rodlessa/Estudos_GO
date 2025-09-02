@@ -1,0 +1,140 @@
+info:
+  contact: {}
+paths:
+  /make_pedidos:
+    get:
+      description: Gera 10 pedidos aleatórios
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Criar pedidos aleatórios
+      tags:
+      - Pedidos
+    post:
+      consumes:
+      - application/json
+      description: Gera N pedidos aleatórios informando no body
+      parameters:
+      - description: Número de pedidos a criar
+        in: body
+        name: total_pedidos
+        required: true
+        schema:
+          type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Criar pedidos via POST
+      tags:
+      - Pedidos
+  /pedido/{id}:
+    get:
+      description: Retorna os itens de um pedido pelo ID
+      parameters:
+      - description: ID do pedido
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Detalhes de um pedido
+      tags:
+      - Pedidos
+  /ping:
+    get:
+      description: Retorna "pong" para testar a API
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Verifica se o serviço está ativo
+      tags:
+      - Health
+  /pong:
+    get:
+      description: Retorna "ping"
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Teste alternativo
+      tags:
+      - Health
+  /ultimos_pedidos:
+    get:
+      description: Retorna os últimos 10 pedidos com total e cliente
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Últimos pedidos
+      tags:
+      - Pedidos
+swagger: "2.0"
